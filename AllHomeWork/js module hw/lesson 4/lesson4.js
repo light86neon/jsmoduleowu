@@ -1,19 +1,20 @@
 //  - створити функцію яка виводить масив
 //
-// function num(random) {
-//     arF = [];
+// function num(array) {
+//     for(const el of array){
 //     console.log(random);
+//     }
 // }
 //
 // num();
 // // - створити функцію яка заповнює масив рандомними числами
 // // та виводить його. Для виведення використати попвередню функцію.
 // function addToArr (random) {
-//     arf =[];
-//     for (let i = 0, t = 40; i < t; i++) {
-//         random.push(Math.round(Math.random() * t))
+//     let arf =[];
+//     for (let i = 0; i < 10; i++) {
+//         arf.push(+(Math.round(Math.random() * 100).toFixed(0));
 //     }
-//     document.write(random);
+//     num(arf);
 // }
 // addToArr();
 //
@@ -342,13 +343,55 @@
 // результат
 //     [3,5,7,9]
 
-function sumArr(array1,array2) {
-    let res =[];
-    for (let i = 0; i < array1.length; i++) {
-       res.push(array1[i]+array2[i]) ;
+// function sumArr(array1,array2) {
+// //     let res =[];
+// //     for (let i = 0; i < array1.length; i++) {
+// //        res.push(array1[i]+array2[i]) ;
+// //     }
+// //     return res;
+// // }
+// // let a = sumArr([1,2,3,4],[2,3,4,5])
+// // console.log(a);
 
-    }
-    return res;
+// створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+//     Двожина масиву від 2 до 100
+// Приклад
+//     [1,0,6,0,3] => [1,6,3,0,0]
+//     [0,1,2,3,4] => [1,2,3,4,0]
+//     [0,0,1,0]   => [1,0,0,0]
+
+// function zeroEnd(array){
+//     let zero= [];
+//     let num= [];
+//     for (const arrayElement of array) {
+//         if(arrayElement === 0) {
+//             zero.push(0);
+//         }else{
+//             num.push(arrayElement);
+//         }
+//     }
+//     return num.concat(zero);
+// }
+//
+// console.log(zeroEnd([1, 0, 6, 0, 3]));;
+
+// Створити функцію яка :
+//     - Додає в боді блок з текстом "Hello owu"
+//
+// function addDiv(){
+//     let newDiv = document.createElement("div");
+//     newDiv.innerHTML = "Hello owu.";
+//     document.body.appendChild(newDiv);
+// }
+// - Додає в боді елемент з текстом . Тип елементу
+// та текст отримати через аргументи
+function addElement(tag, text) {
+    let el = document.createElement(tag);
+    el.innerText = text;
+    document.body.appendChild(el);
 }
-let a = sumArr([1,2,3,4],[2,3,4,5])
-console.log(a);
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+//     Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+//     Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+//     Для кожної властивості створити всередені блока автомоблія свій блок
