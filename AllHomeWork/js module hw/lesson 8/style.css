@@ -1,0 +1,128 @@
+.form-with-inputs{
+    display: flex;
+    background-color: yellow;
+    margin: 20px;
+    padding: 10px;
+    flex-direction: column;
+}
+#submit {
+    width: 150px;
+    margin-right: 140px;
+    float: right;
+}
+
+#textArea {
+    margin-left: 20px;
+    float: left;
+}
+
+#btnL, #btnR {
+    margin-left: 20px ;
+    margin-top: 20px;
+    display: none;
+}
+.form-with-inputs form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-with-inputs form label{
+    margin: 10px;
+}
+
+.form-with-inputs .form-with-inputs-btn{
+    align-self: center;
+    margin: 30px;
+}
+
+.text-step{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: purple;
+}
+
+.text-step .save-text-step-area{
+    margin: 15px auto 5px;
+}
+
+.text-step .text-step-arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.user-book{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-book form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.user-book form label{
+    margin: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.user-book .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 5px;
+    background-color: purple;
+}
+
+.user-book .user-form-block{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+#formContact {
+    height: 300px ;
+    width: 470px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+label {
+    width : auto;
+}
+
+#email {
+    /* width: 70%; */
+    display: inline-block;
+}
+
+#dataOfBirth {
+    height: 15;
+}
+
+#submit {
+    margin-top: 252px;
+    float: left;
+}
+
+
